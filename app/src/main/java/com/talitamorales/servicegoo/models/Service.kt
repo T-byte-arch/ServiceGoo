@@ -1,3 +1,6 @@
 package com.talitamorales.servicegoo.models
 
-data class Service()
+data class Service(
+    var name: String,
+    var priceService: String
+)
