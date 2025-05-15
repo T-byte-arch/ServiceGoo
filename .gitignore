@@ -43,3 +43,7 @@ local.properties
 .gradle/8.10.2/checksums/sha1-checksums.bin
 .gradle/8.10.2/checksums/md5-checksums.bin
 .gradle/8.10.2/checksums/checksums.lock
+.idea/AndroidProjectSystem.xml
+.idea/caches/deviceStreaming.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
