@@ -6,19 +6,17 @@
     android:background="@color/white"
     android:padding="16dp">
 
-    <EditText
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/search_service"
-        android:drawableStart="@android:drawable/ic_menu_search"
-        android:padding="10dp"
-        android:textSize="16sp"/>
+        android:hint="@string/search_service" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewSearch"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:scrollbars="vertical"
         android:paddingTop="10dp"
         android:paddingLeft="10dp" />

@@ -11,4 +11,7 @@
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="profile">Profile</string>
+    <string name="search_title">search_title</string>
+    <string name="search_hint">search_hint</string>
+    <string name="title_activity_search_results">search_results</string>
 </resources>
