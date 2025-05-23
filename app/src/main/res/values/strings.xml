@@ -5,7 +5,7 @@
     <string name="name_service">Name of Service</string>
     <string name="Settings">Settings</string>
     <string name="cellphone">cellphone</string>
-    <string name="save">Save</string>
+    <string name="register">Register</string>
     <string name="email">Email</string>
     <string name="full_name">Name Full</string>
     <string name="home">Home</string>
@@ -14,4 +14,7 @@
     <string name="search_title">search_title</string>
     <string name="search_hint">search_hint</string>
     <string name="title_activity_search_results">search_results</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
 </resources>

@@ -8,9 +8,10 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.maps.model.LatLng
 import com.talitamorales.servicegoo.R
 import com.talitamorales.servicegoo.adapters.ServiceAdapter
-import com.talitamorales.servicegoo.models.Service
+import com.talitamorales.servicegoo.models.LocalService
 
 class SearchFragment: Fragment() {
 
@@ -19,16 +20,16 @@ class SearchFragment: Fragment() {
     private lateinit var searchView: SearchView
 
     private fun listServices() = arrayListOf(
-        Service("Haircut", "$50.00"),
-        Service("Manicure", "$35.00"),
-        Service("Massage", "$80.00"),
-        Service("Hair Remove", "$40.00"),
-        Service("Facial Aesthetics", "$100.00"),
-        Service("Hairstyling", "$120.00"),
-        Service("Barbershop", "$45.00"),
-        Service("Nail Extension", "$90.00"),
-        Service("Skin Cleansing", "$75.00"),
-        Service("Makeup", "$150.00")
+        LocalService("Haircut", "$50.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Manicure", "$35.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Massage", "$80.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Hair Remove", "$40.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Facial Aesthetics", "$100.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Hairstyling", "$120.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Barbershop", "$45.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Nail Extension", "$90.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Skin Cleansing", "$75.00", LatLng(-23.5631, -46.6544)),
+        LocalService("Makeup", "$150.00", LatLng(-23.5631, -46.6544))
     )
 
     override fun onCreateView(

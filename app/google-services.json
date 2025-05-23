@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899155668403",
+    "project_id": "servicegoo-fa4bd",
+    "storage_bucket": "servicegoo-fa4bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899155668403:android:140fb35a8e6eafb9d76fc6",
+        "android_client_info": {
+          "package_name": "com.talitamorales.servicegoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNlc7uluTkGhUZt3PPKxcbspp5xKqj8I0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
