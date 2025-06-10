@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.maps.model.LatLng
@@ -44,10 +45,12 @@ class SearchFragment: Fragment() {
         val listServices = listServices()
 
         adapter = ServiceAdapter(listServices) { service ->
+            val bundle = Bundle().apply {
+                putString("Selected service", service.name)
+            }
+            findNavController().navigate(R.id.action_searchFragment_to_homeFragment, bundle)
             /*
-            TODO: - Adicionar evento do clique ao clicar em um item da lista
-            TODO: O que fazer? Ir para outra tela?
-             Esconder a lista de servicos e mostrar o mapa com os locais que possuem o serviçø?
+           Esconder a lista de servicos e mostrar o mapa com os locais que possuem o serviçø?
              */
         }
 

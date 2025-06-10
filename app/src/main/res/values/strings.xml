@@ -17,4 +17,5 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="Show_or_hide_password">"Show or hide password"</string>
 </resources>

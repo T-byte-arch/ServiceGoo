@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -39,6 +40,11 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
 
         val mapFragment = childFragmentManager.findFragmentById(R.id.fragmentView) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        val selectedService = arguments?.getString("Selected service")
+        selectedService?.let {
+            Toast.makeText(requireContext(), "Service Selected: $it", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
